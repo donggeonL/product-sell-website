@@ -13,7 +13,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping("")
+    @PostMapping
     public ResponseEntity<?> saveProduct(@RequestBody Product product) {
         return new ResponseEntity<>(productService.saveProduct(product), HttpStatus.CREATED);
     }
@@ -22,5 +22,10 @@ public class ProductController {
     public ResponseEntity<?> deleteProduct(@PathVariable Long productId)
     {
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping
+    public ResponseEntity<?> getAllProducts(){
+        return new ResponseEntity<>(productService.findAllproducts(), HttpStatus.OK);
     }
 }

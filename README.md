@@ -7,5 +7,5 @@
 > #### HeidiSQL
 > #### IntelliJ
 
-## Client 보기!
+## Client CODE 보기!
 > <a href="https://github.com/donggeonL/product-sell-website-react"> Product-sell-react GITHUB 주소  </a>
